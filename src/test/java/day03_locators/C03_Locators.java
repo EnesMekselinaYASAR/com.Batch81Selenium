@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class C03_Locators {
         /*
@@ -58,7 +59,7 @@ public class C03_Locators {
         } else System.out.println("Expected kullanici testi FAILED");
 
 
-        //                f. “Addresses” ve “Sign Out” textlerinin görüntülendiğini( displayed) doğrulayin(verify).
+        // f. “Addresses” ve “Sign Out” textlerinin görüntülendiğini( displayed) doğrulayin(verify).
         WebElement addressesElementi = driver.findElement(By.linkText("Addresses"));
         WebElement signOutElementi = driver.findElement(By.linkText("Sign out"));
         //bir web elementin görünür olup olmadığını is.Displayed() methoduyla test ederiz.Boolean sonuç döndürür.
@@ -74,7 +75,7 @@ public class C03_Locators {
         } else System.out.println("Sing Out testi FAILED");
 
 
-        //        3. Sayfada kac tane link oldugunu bulun.
+        // 3. Sayfada kac tane link oldugunu bulun.
         List<WebElement> linklerListesi = driver.findElements(By.tagName("a"));
         System.out.println("Sayfadaki link sayısı : " + linklerListesi.size());
 
